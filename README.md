@@ -33,7 +33,7 @@ Each base URL is handled by its own class:
 
 - `CivicMediaScraper` — for Lansdale CivicMedia  
 - `CivicClerkScraper` — for Charleston CivicClerk  
-- `YouTubeScraper` — for YouTube Live Meeting streams  
+- `YouTubeScraper` — for YouTube channels  
 - `FredericksburgCityScraper` — for RegionalWebTV (Fredericksburg)  
 - `WinchesterVirginiaScraper` — for Winchester CivicWeb  
 
