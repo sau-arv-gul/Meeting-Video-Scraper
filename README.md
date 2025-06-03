@@ -23,7 +23,6 @@ These videos cover sessions like City Council meetings, Finance Committees, Plan
 
 
 ## 📁 Project Structure
-
 ```text
 Video Scraper/
 │
