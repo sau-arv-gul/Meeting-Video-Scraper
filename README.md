@@ -31,7 +31,7 @@ Since each website has a unique structure and layout, the scraper is built using
 
 Each base URL is handled by its own class:
 
-- `CivicMediaScraper` : for Lansdale CivicMedia  
+- `CivicMediaScraper` : for Lansdale CivicMedia [link](https://www.lansdale.org/CivicMedia?CID=2024-Council-Meetings-26)
 - `CivicClerkScraper` : for Charleston CivicClerk  
 - `YouTubeScraper` : for YouTube channels  
 - `FredericksburgCityScraper` : for RegionalWebTV (Fredericksburg)  
