@@ -6,6 +6,7 @@ from crawlers.CivicMedia import CivicMediaScraper
 import json
 import time
 
+t1 = time.time()
 proxy_list = [
     "http://tifmppwg:849zwtk9z39z@198.23.239.134:6540",
     "http://tifmppwg:849zwtk9z39z@207.244.217.165:6712",
@@ -25,7 +26,7 @@ start_date = input_data['start_date']  # format: "2024-11-20"
 end_date = input_data['end_date']      # format: "2024-11-26"
 
 BASE_URLS = input_data["base_urls"]
-OUTPUT_FILE = "Output.json"
+OUTPUT_FILE = "OUTPUT_1.json"
 
 direct_url_list = [] # to store the direct links of filtered url which can be downloaded by yt_dlp
 
@@ -35,13 +36,13 @@ for base_url in BASE_URLS:
 
     if "CivicMedia" in base_url:
         scraper = CivicMediaScraper(base_url, OUTPUT_FILE, proxy_list)  # https://www.lansdale.org/CivicMedia?CID=2024-Council-Meetings-26
-
         all_url= scraper.get_all_url()
         filter = scraper.get_filtered_url(start_date,end_date,all_url)
         scraper.save(filter) # save the data 
         direct = scraper.get_direct_url(filter) # get the direct url of filtered list 
         if direct:
             direct_url_list.extend(direct) 
+        print("\n===========================================================================================\n")
 
     if "civicclerk" in base_url:
         scraper = CivicClerkScraper(base_url, OUTPUT_FILE)    # https://charlestonwv.portal.civicclerk.com/
@@ -53,6 +54,7 @@ for base_url in BASE_URLS:
         direct = scraper.get_direct_url(filter)
         if direct: 
             direct_url_list.extend(direct) 
+        print("\n===========================================================================================\n")
 
     elif "youtube" in base_url:
         scraper = YouTubeScraper(base_url, OUTPUT_FILE)   # https://www.youtube.com/@SLCLiveMeetings/streams
@@ -63,6 +65,7 @@ for base_url in BASE_URLS:
         direct = scraper.get_direct_url(filter)
         if direct:
             direct_url_list.extend(direct) 
+        print("\n===========================================================================================\n")
 
     elif "fredcc" in base_url:
         scraper = FredericksburgCityScraper(base_url, OUTPUT_FILE)  # https://www.regionalwebtv.com/fredcc
@@ -73,6 +76,7 @@ for base_url in BASE_URLS:
         direct = scraper.get_direct_url(filter)
         if direct:
             direct_url_list.extend(direct)
+        print("\n===========================================================================================\n")
 
     elif "winchesterva" in base_url:
         scraper = WinchesterVirginiaScraper(base_url, OUTPUT_FILE,proxy_list) # https://winchesterva.civicweb.net/portal/
@@ -83,11 +87,15 @@ for base_url in BASE_URLS:
         direct = scraper.get_direct_url(filter)
         if direct:
             direct_url_list.extend(direct)
+        print("\n===========================================================================================\n")
 
 
 
 # save the direct links in a json file
-with open("direct_urls.json", "w") as f:
+with open("OUTPUT_2.json", "w") as f:
     json.dump(direct_url_list, f, indent=4)
 
+t2 = time.time()
 
+print("===========================================================================================")
+print(f"Total time to scrape URL & direct URL in [{start_date},{end_date}]: {(t2-t1)/60} Minutes")

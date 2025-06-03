@@ -351,8 +351,8 @@ class FredericksburgCityScraper:
                     print(f"📌 Title     : {title}")
                     print(f"📅 Date      : {date}")
                     print(f"🎬 Direct URL : {video_url}\n")
-
-                    direct_urls.append(video_url)
+                    if video_url:
+                        direct_urls.append(video_url)                    
                 except Exception as e:
                     print(f"❌ Error processing {url}: {e}")
                     continue
@@ -365,17 +365,3 @@ class FredericksburgCityScraper:
 # ========================================================================================================
 
 
-# t1 = time.time()
-# with open('Input.json', 'r') as f:
-#     input_data = json.load(f)
-# start_date = input_data['start_date']  # format: "2024-11-20"
-# end_date = input_data['end_date']      # format: "2024-11-26"
-
-
-# base_url = "https://www.regionalwebtv.com/fredcc"
-# output_file = "Metadata_result.json"
-# scraper = FredericksburgCityScraper(base_url,output_file)
-# filter_url = scraper.get_filtered_url(start_date,end_date)
-# scraper.save(filter_url)
-# direct = scraper.get_direct_url(filter_url)
-# print(len(direct))

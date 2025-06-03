@@ -128,23 +128,3 @@ class YouTubeScraper:
 
 # ========================================================================================================
 
-# with open('Input.json', 'r') as f:
-#     input_data = json.load(f)
-
-# start_date = input_data['start_date']
-# end_date = input_data['end_date']
-
-# channel_url="https://www.youtube.com/@SLCLiveMeetings/streams"
-# output_file = "Metadata_result.json"
-
-# t1 = time.time()
-
-# scraper = YouTubeScraper(channel_url, output_file)
-# filtered_data = scraper.get_filtered_url(start_date, end_date)
-# scraper.save(filtered_data)
-
-# t2 = time.time()
-
-# T = (t2-t1)/60 
-
-# print("Total time to extract direct URL ", T, "Minutes")

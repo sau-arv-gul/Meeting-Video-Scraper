@@ -197,11 +197,11 @@ class CivicClerkScraper:
                         direct_urls.append(video_url)
                     else:
                         print("   [✘] Video tag found but no src.")
-                        direct_urls.append("")
+                        
 
                 except Exception as e:
                     print(f"   [✘] Error: {e}")
-                    direct_urls.append("")
+                 
 
         finally:
             driver.quit()
@@ -242,22 +242,4 @@ class CivicClerkScraper:
             driver.quit()
 
 
-
-# t1 = time.time()
-# # Run and store results
-# with open('Input.json', 'r') as f:
-#     input_data = json.load(f)
-# start_date = input_data['start_date']  # format: "2024-11-20"
-# end_date = input_data['end_date']      # format: "2024-11-26"
-# output_file = "Metadata_result.json"
-# base_url = "https://charlestonwv.portal.civicclerk.com/"
-
-
-# scraper = CivicClerkScraper(base_url,output_file)
-# all_video = scraper.get_all_url(scroll_num=7)
-# filtered_link = scraper.get_filtered_url("2025-04-01", "2025-05-01", all_video)
-# scraper.save(filtered_link)
-# derect_link = scraper.get_direct_url(filtered_link)
-# t2 = time.time()
-# print(f"Total Time to filtere and SAVE: {(t2-t1)/60} Minutes")
 

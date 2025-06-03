@@ -255,61 +255,26 @@ class CivicMediaScraper:
         urls = [data["url"] for data in filtered_urls]
         direct_urls = []
 
+
+
         for link in urls:
-            print(f"[*] Processing: {link}")
-            direct_url = self.single_direct_url(link)
-            if direct_url:
-                direct_urls.append(direct_url)
-            else:
-                print(f"[✗] No direct video URL found for: {link}")
-                
+            print(f"\nExtracting Direct Link ...")
+            try:
+                direct_url = self.single_direct_url(link)
+                if direct_url:
+                    direct_urls.append(direct_url)
+                else:
+                    print(f"[✗] No direct video URL found for: {link}")
+            except Exception as e:
+                print(f"[!] Error processing {link}: {e}")
+                continue  # Ensure the loop continues on error
+
         return direct_urls
         
 
-# ========================================================================================================
     
 
-
-
-
-
-# # Load JSON from file
-# with open('Input.json', 'r') as f:
-#     input_data = json.load(f)
-
-# OUTPUT_FILE = "Metadata_result.json"
-# # Step 1: Ensure OUTPUT_FILE exists and is a valid JSON array
-# # Extract values
-# start_date = input_data['start_date'] # "2024-11-20",
-# end_date = input_data['end_date']
-
-
-# proxy_list = [
-#     "http://tifmppwg:849zwtk9z39z@198.23.239.134:6540",
-#     "http://tifmppwg:849zwtk9z39z@207.244.217.165:6712",
-#     "http://tifmppwg:849zwtk9z39z@107.172.163.27:6543",
-#     "http://tifmppwg:849zwtk9z39z@161.123.152.115:6360",
-#     "http://tifmppwg:849zwtk9z39z@23.94.138.75:6349",
-#     "http://tifmppwg:849zwtk9z39z@216.10.27.159:6837",
-#     "http://tifmppwg:849zwtk9z39z@136.0.207.84:6661",
-#     "http://tifmppwg:849zwtk9z39z@64.64.118.149:6732",
-#     "http://tifmppwg:849zwtk9z39z@142.147.128.93:6593",
-#     "http://tifmppwg:849zwtk9z39z@154.36.110.199:6853"
-# ]
-# # Base Urls
-# CivicMedia_url = "https://www.lansdale.org/CivicMedia?CID=2024-Council-Meetings-26"
-
-# t1 = time.time()
-# scraper = CivicMediaScraper(CivicMedia_url, OUTPUT_FILE,proxy_list)
-# all_url = scraper.get_all_url()
-# filtered_url = scraper.get_filtered_url( "2024-06-20",  "2024-11-26", all_url)
-# scraper.save(filtered_url)
-# print("\n ================== DIRECT URL =========================")
-# direct_url = scraper.get_direct_url(filtered_url) # Only if you want to download it 
-# print(direct_url)
-# t2 = time.time()
-
-# print("Total Time to scrape: ", (t2-t1)/60)
-
+# ========================================================================================================
+    
 
 

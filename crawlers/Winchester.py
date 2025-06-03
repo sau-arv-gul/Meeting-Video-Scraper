@@ -202,8 +202,9 @@ class WinchesterVirginiaScraper:
         end = "/download"
         Non_downloadable_url = [data['url'] for data in filtered_data]
         direct_links = []
-        for i in Non_downloadable_url:
-            direct_links.append(i+end)
+        for url in Non_downloadable_url:
+            if url:
+                direct_links.append(url+end)
         return direct_links
     
 # ========================================================================================================      
@@ -211,34 +212,5 @@ class WinchesterVirginiaScraper:
 
 
 
-# # Example usage:
-# with open('Input.json', 'r') as f:
-#     input_data = json.load(f)
-# start_date = input_data['start_date']  # format: "2024-11-20"
-# end_date = input_data['end_date']      # format: "2024-11-26"
-
-
-# OUTPUT_FILE = "Metadata_result.json"
-
-
-
-# proxy_list = [
-#     "http://tifmppwg:849zwtk9z39z@198.23.239.134:6540",
-#     "http://tifmppwg:849zwtk9z39z@207.244.217.165:6712",
-#     "http://tifmppwg:849zwtk9z39z@107.172.163.27:6543",
-#     "http://tifmppwg:849zwtk9z39z@161.123.152.115:6360",
-#     "http://tifmppwg:849zwtk9z39z@23.94.138.75:6349",
-#     "http://tifmppwg:849zwtk9z39z@216.10.27.159:6837",
-#     "http://tifmppwg:849zwtk9z39z@136.0.207.84:6661",
-#     "http://tifmppwg:849zwtk9z39z@64.64.118.149:6732",
-#     "http://tifmppwg:849zwtk9z39z@142.147.128.93:6593",
-#     "http://tifmppwg:849zwtk9z39z@154.36.110.199:6853"
-# ]
-
-# base_url = "https://winchesterva.civicweb.net/portal/"
-# scraper = WinchesterVirginiaScraper(base_url,proxy_list,OUTPUT_FILE)
-# filtered_url = scraper.get_filtered_url(start_date,end_date)
-# # scraper.save(filtered_videos)
-# direct_url = scraper.get_direct_url(filtered_url)
 
 
