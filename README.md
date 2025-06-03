@@ -12,6 +12,21 @@ These videos cover sessions like City Council meetings, Finance Committees, Plan
 - **Direct video URL:** Extracts direct video URLs, which is downloaded by yt-dlp
 - **Proxy:** Uses IP rotation and delays between requests to avoid getting blocked.
 
+
+
+
+
+## 🛠️ Tech Stack
+
+- **Date-based filtering:** 
+  filters and collects videos within a user-specified date range
+- **Metadata extraction:** Captures video title, date, URL, and source type.
+- **Direct video URL:** Extracts direct video URLs, which is downloaded by yt-dlp
+- **Proxy:** Uses IP rotation and delays between requests to avoid getting blocked.
+- **Proxy:** Uses IP rotation and delays between requests to avoid getting blocked
+
+
+
 ## 🛠️ Tech Stack
 
 - **Requests:** 
