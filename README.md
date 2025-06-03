@@ -6,7 +6,8 @@ Since each website has a different layout and structure, the project includes a 
 
 ## ✨ Features
 
-- **Date-based filtering**
+- **Date-based filtering: **
   filters and collects videos within a user-specified date range
--
+- **Metadata extraction:** Captures video title, date, URL, and source type.
+- **Direct video URL:** Extracts direct video URLs, which is downloaded by yt-dlp
   
