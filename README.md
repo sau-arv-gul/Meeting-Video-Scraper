@@ -31,20 +31,20 @@ Since each website has a unique structure and layout, the scraper is built using
 
 Each base URL is handled by its own class:
 
-- `CivicMediaScraper` — for Lansdale CivicMedia  
-- `CivicClerkScraper` — for Charleston CivicClerk  
-- `YouTubeScraper` — for YouTube channels  
-- `FredericksburgCityScraper` — for RegionalWebTV (Fredericksburg)  
-- `WinchesterVirginiaScraper` — for Winchester CivicWeb  
+- `CivicMediaScraper` : for Lansdale CivicMedia  
+- `CivicClerkScraper` : for Charleston CivicClerk  
+- `YouTubeScraper` : for YouTube channels  
+- `FredericksburgCityScraper` : for RegionalWebTV (Fredericksburg)  
+- `WinchesterVirginiaScraper` : for Winchester CivicWeb  
 
 ### 🔧 Common Methods in Each Class
 
 Each class includes the following key methods:
 
-- `get_all_url( )` — Extracts all video links from the base URL  
-- `get_filtered_url( )` — Filters and returns only the videos between the specified date range  
-- `save( )` — Saves the filtered results into `OUTPUT_1.json`  
-- `get_direct_url( )` — for each filtered urls, it extract its direct url and save into `OUTPUT_2.json`.
+- `get_all_url( )` : Extracts all video links from the base URL  
+- `get_filtered_url( )` : Filters and returns only the videos between the specified date range  
+- `save( )` : Saves the filtered results into `OUTPUT_1.json`  
+- `get_direct_url( )` : for each filtered urls, it extract its direct url and save into `OUTPUT_2.json`.
 
 
 ## 📁 Project Structure
