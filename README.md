@@ -17,7 +17,7 @@ These videos cover sessions like City Council meetings, Finance Committees, Plan
 - **Requests:** 
   Sending lightweight HTTP requests.
 - **BeautifulSoup:** Parsing and navigating HTML content.
-- **Selenium:** Parsing and navigating HTML content.
+- **Selenium:** Automating browser actions & handling dynamic websites.
 - **Selenium-Wire:** Extends Selenium to capture requests and responses.
 - **yt-dlp:** To download video from direct URL.
 
