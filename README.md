@@ -4,11 +4,11 @@ These videos cover sessions like City Council meetings, Finance Committees, Plan
 ## 🛠️ Tech Stack
 This project uses the following tools and libraries:
 
-- **Selenium** – For automating browser actions and handling dynamic websites.
-- **Selenium-Wire** – Extends Selenium to capture requests and responses.
-- **Requests** – For sending lightweight HTTP requests.
-- **BeautifulSoup** – For parsing and navigating HTML content.
-- **yt-dlp** – For downloading videos from supported platforms using direct URLs.
+- **Selenium:** Automating browser actions and handling dynamic websites.
+- **Selenium-Wire:** Extends Selenium to capture requests and responses.
+- **Requests:** – Sending lightweight HTTP requests.
+- **BeautifulSoup:** – Parsing and navigating HTML content.
+- **yt-dlp** Downloading videos from supported platforms using direct URLs.
 
 
 Each website has a different layout and structure, so the project uses dedicated scraper classes tailored to each platform.
