@@ -26,5 +26,25 @@ These videos cover sessions like City Council meetings, Finance Committees, Plan
 
 
 ## Class
-Each website has a different layout and structure, so the project uses dedicated scraper classes tailored to each platform.
-Since each website has a different layout and structure, the project includes a separate scraper class customized for each platform.
+## 📁 Project Structure
+
+```text
+Video Scraper/
+│
+├── crawlers/
+│   ├── CivicClerk.py                # Scraper for CivicClerk websites
+│   ├── CivicMedia.py                # Scraper for CivicMedia (Lansdale)
+│   ├── Fredericksburg.py            # Scraper for RegionalWebTV (Fredericksburg)
+│   ├── Winchester.py                # Scraper for Winchester, VA CivicWeb
+│   ├── YouTube.py                   # Scraper for YouTube Live Streams
+│
+├── downloads/                       # Output video download directory
+│
+├── BONUS.py                         # Bonus problem code (optional task)
+├── Input.json                       # Sample input JSON for testing
+├── Main.py                          # Main script to run metadata scraping
+├── OUTPUT_1.json                    # Output of Problem 1 (metadata)
+├── OUTPUT_2.json                    # Output of Problem 2 (direct video URLs)
+├── Part2.ipynb                      # Jupyter Notebook for video URL resolution
+├── requirements.txt                 # Required Python packages
+```
