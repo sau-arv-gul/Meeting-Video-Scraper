@@ -22,10 +22,6 @@ These videos cover sessions like City Council meetings, Finance Committees, Plan
 - **yt-dlp:** To download video from direct URL.
 
 
-
-
-
-## Class
 ## 📁 Project Structure
 
 ```text
