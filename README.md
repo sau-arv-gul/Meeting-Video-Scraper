@@ -37,10 +37,10 @@ Video Scraper/
 ├── downloads/                       # Output video download directory
 │
 ├── BONUS.py                         # Bonus problem code (optional task)
-├── Input.json                       # Sample input JSON for testing
+├── Input.json                       # input JSON for testing
 ├── Main.py                          # Main script to run metadata scraping
-├── OUTPUT_1.json                    # Output of Problem 1 (metadata)
-├── OUTPUT_2.json                    # Output of Problem 2 (direct video URLs)
+├── OUTPUT_1.json                    # Output of filtered metadata
+├── OUTPUT_2.json                    # direct video URLs of filtered data 
 ├── Part2.ipynb                      # Jupyter Notebook for video URL resolution
 ├── requirements.txt                 # Required Python packages
 ```
