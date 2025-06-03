@@ -23,9 +23,9 @@ These videos cover sessions like City Council meetings, Finance Committees, Plan
 
 
 
-## 🧱 Scraper Class Design
+## 🧩 Scraper Class Design
 
-Since each website has a unique structure and layout, the scraper is built using dedicated Python classes — one for each base URL. This modular design makes it easy to maintain, debug, and extend.
+Since each website has a unique structure and layout, the scraper is built using dedicated Python classes, one for each base URL. This modular design makes it easy to maintain, debug, and extend.
 
 ### 🔹 Scraper Classes
 
