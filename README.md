@@ -4,3 +4,9 @@ These videos cover sessions like City Council meetings, Finance Committees, Plan
 Each website has a different layout and structure, so the project uses dedicated scraper classes tailored to each platform.
 Since each website has a different layout and structure, the project includes a separate scraper class customized for each platform.
 
+## ✨ Features
+
+- **Date-based filtering**
+  filters and collects videos within a user-specified date range
+-
+  
