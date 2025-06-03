@@ -18,12 +18,12 @@ These videos cover sessions like City Council meetings, Finance Committees, Plan
 
 ## 🛠️ Tech Stack
 
-- **Date-based filtering:** 
-  filters and collects videos within a user-specified date range
-- **Metadata extraction:** Captures video title, date, URL, and source type.
-- **Direct video URL:** Extracts direct video URLs, which is downloaded by yt-dlp
-- **Proxy:** Uses IP rotation and delays between requests to avoid getting blocked.
-- **Proxy:** Uses IP rotation and delays between requests to avoid getting blocked
+- **Requests:** 
+  Sending lightweight HTTP requests.
+- **BeautifulSoup:** Parsing and navigating HTML content.
+- **Selenium:** Parsing and navigating HTML content.
+- **Selenium-Wire:** Extends Selenium to capture requests and responses.
+- **yt-dlp:** To download video from direct URL.
 
 
 
