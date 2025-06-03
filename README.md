@@ -13,12 +13,11 @@ These videos cover sessions like City Council meetings, Finance Committees, Plan
 - **Proxy:** Uses IP rotation and delays between requests to avoid getting blocked.
 
 ## 🛠️ Tech Stack
-
--- **Requests:** Sending lightweight HTTP requests.
--- **BeautifulSoup:** Parsing and navigating HTML content.
--- **Selenium:** Automating browser actions and handling dynamic websites.
--- **Selenium-Wire:** Extends Selenium to capture requests and responses.
--- **yt-dlp** Downloading videos from supported platforms using direct URLs.
+- **Requests:** Sending lightweight HTTP requests.
+- **BeautifulSoup:** Parsing and navigating HTML content.
+- **Selenium:** Automating browser actions and handling dynamic websites.
+- **Selenium-Wire:** Extends Selenium to capture requests and responses.
+- **yt-dlp** Downloading videos from supported platforms using direct URLs.
 
 
   ## Class
