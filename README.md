@@ -22,6 +22,31 @@ These videos cover sessions like City Council meetings, Finance Committees, Plan
 - **yt-dlp:** To download video from direct URL.
 
 
+
+## 🧱 Scraper Class Design
+
+Since each website has a unique structure and layout, the scraper is built using dedicated Python classes — one for each base URL. This modular design makes it easy to maintain, debug, and extend.
+
+### 🔹 Scraper Classes
+
+Each base URL is handled by its own class:
+
+- `CivicMediaScraper` — for Lansdale CivicMedia  
+- `CivicClerkScraper` — for Charleston CivicClerk  
+- `YouTubeScraper` — for YouTube Live Meeting streams  
+- `FredericksburgCityScraper` — for RegionalWebTV (Fredericksburg)  
+- `WinchesterVirginiaScraper` — for Winchester CivicWeb  
+
+### 🔧 Common Methods in Each Class
+
+Each class includes the following key methods:
+
+- `get_all_url()` — Extracts all video links from the base URL  
+- `get_filtered_url(start_date, end_date)` — Filters and returns only the videos between the specified date range  
+- `save()` — Saves the filtered results into `OUTPUT_1.json`  
+- `get_direct_url()` — Resolves embedded or indirect video pages into direct video file URLs that can be downloaded using tools like `yt-dlp`
+
+
 ## 📁 Project Structure
 ```text
 Video Scraper/
