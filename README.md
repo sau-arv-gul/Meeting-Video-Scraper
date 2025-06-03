@@ -41,10 +41,10 @@ Each base URL is handled by its own class:
 
 Each class includes the following key methods:
 
-- `get_all_url()` — Extracts all video links from the base URL  
-- `get_filtered_url(start_date, end_date)` — Filters and returns only the videos between the specified date range  
-- `save()` — Saves the filtered results into `OUTPUT_1.json`  
-- `get_direct_url()` — Resolves embedded or indirect video pages into direct video file URLs that can be downloaded using tools like `yt-dlp`
+- `get_all_url( )` — Extracts all video links from the base URL  
+- `get_filtered_url( )` — Filters and returns only the videos between the specified date range  
+- `save( )` — Saves the filtered results into `OUTPUT_1.json`  
+- `get_direct_url( )` — for each filtered urls, it extract its direct url and save into `OUTPUT_2.json`.
 
 
 ## 📁 Project Structure
