@@ -3,7 +3,6 @@ Meeting Video Scraper is a Python-based tool,  developed to scrape and download 
 These videos cover sessions like City Council meetings, Finance Committees, Planning Commissions, Zoning Boards, and other civic organizations.
 
 
-
 ## ✨ Features
 
 - **Date-based filtering:** 
@@ -11,9 +10,6 @@ These videos cover sessions like City Council meetings, Finance Committees, Plan
 - **Metadata extraction:** Captures video title, date, URL, and source type.
 - **Direct video URL:** Extracts direct video URLs, which is downloaded by yt-dlp
 - **Proxy:** Uses IP rotation and delays between requests to avoid getting blocked.
-
-
-
 
 
 ## 🛠️ Tech Stack
@@ -27,16 +23,8 @@ These videos cover sessions like City Council meetings, Finance Committees, Plan
 
 
 
-## 🛠️ Tech Stack
-
-- **Requests:** 
-  Sending lightweight HTTP requests.
-- **BeautifulSoup:** Parsing and navigating HTML content.
-- **Selenium:** Parsing and navigating HTML content.
-- **Selenium-Wire:** Extends Selenium to capture requests and responses.
 
 
-  ## Class
- 
+## Class
 Each website has a different layout and structure, so the project uses dedicated scraper classes tailored to each platform.
 Since each website has a different layout and structure, the project includes a separate scraper class customized for each platform.
