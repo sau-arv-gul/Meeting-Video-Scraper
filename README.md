@@ -39,7 +39,7 @@ Each base URL is handled by its own class:
 
 ### 🔧 Common Methods in Each Class
 
-Each class includes the following key methods:
+Each class contains the following methods:
 
 - `get_all_url( )` : Extracts all video links from the base URL  
 - `get_filtered_url( )` : Filters and returns only the videos between the specified date range  
