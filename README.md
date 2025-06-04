@@ -92,7 +92,12 @@ pip install -r requirements.txt
        - saves extracted direct link to OUTPUT_2.json
  ```bash
 python Main.py
-```  
+```
+
+4. **Download videos**
+```bash
+python BOUNUS.py
+```
 
    
 
