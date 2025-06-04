@@ -118,3 +118,25 @@ Perfect for debugging, experimenting, or scraping from specific platforms as nee
    
 
 
+### ⚠️ Challenges Faced During Extraction
+
+While building this scraper, I encountered several complex scenarios that made extraction non-trivial. Here are some key technical challenges:
+
+- **🔐 Blocked Access to Direct Video Links**  
+  Some `.m3u8` HLS stream URLs returned **403 Forbidden** errors when accessed outside the site. These were often protected by referrer policies or temporary session tokens tied to an authenticated browser session.
+
+- **📦 Blob URLs Cannot Be Downloaded**  
+  Platforms like IBM Cloud Video or Viebit use `blob:` URLs (e.g., `blob:https://...`) in their `<video>` tags. These URLs are temporary, in-memory browser references and do **not** point to actual downloadable video files like `.mp4` or `.m3u8`.
+
+- **⚙️ Dynamic JavaScript Rendering**  
+  The video players and metadata are often rendered dynamically using JavaScript. This makes standard tools like `requests` or `BeautifulSoup` ineffective, since they can't execute JavaScript. Tools like `selenium-wire` were necessary to capture underlying network requests.
+
+- **🔄 JavaScript-Based Pagination**  
+  Some websites used ASP.NET-style pagination (`__doPostBack(...)`), which triggers JavaScript-based POST requests instead of changing page URLs. Scraping these required simulating those POST actions manually.
+
+- **🎥 HLS Streaming Instead of Direct `.mp4` Files**  
+  Many sites used HTTP Live Streaming (HLS), which splits videos into `.ts` segments served via `.m3u8` playlists. Extracting usable download links required identifying and interpreting those manifests.
+
+---
+
+These issues gave me deeper insights into how streaming platforms work under the hood — particularly regarding **referrer policies**, **authenticated sessions**, and **dynamic video delivery mechanisms**. Each challenge improved the robustness of the scraper and broadened my technical understanding.
