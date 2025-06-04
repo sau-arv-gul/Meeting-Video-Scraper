@@ -77,3 +77,10 @@ Video Scraper/
 ```bash
 git clone https://github.com/sau-arv-gul/Meeting-Video-Scraper.git
 cd Meeting-Video-Scraper
+```
+
+2. **Install dependencies**
+
+   
+
+
