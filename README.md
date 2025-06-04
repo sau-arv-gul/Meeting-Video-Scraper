@@ -68,3 +68,12 @@ Video Scraper/
 ├── Part2.ipynb                      # Jupyter Notebook for video URL resolution
 ├── requirements.txt                 # Required Python packages
 ```
+
+
+## 🛠️ Setup Instructions
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/sau-arv-gul/Meeting-Video-Scraper.git
+cd Meeting-Video-Scraper
