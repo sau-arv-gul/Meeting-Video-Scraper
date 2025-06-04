@@ -115,7 +115,9 @@ Perfect for debugging, experimenting, or scraping from specific platforms as nee
 ## 🔍 Testing Data Part 2
 - The testing url of part 2 was done in this [Google Colab notebook](https://colab.research.google.com/drive/1W5bPFRhP1id0fE0y1CZgN3CjcPfaTjkk?usp=sharing)
 - One of the bonus challenge URLs was also successfully resolved — see the final section of the notebook for details.
-   
+
+
+## Bonus: Parallel download { yt_dl + aria2c } 
 
 
 ## ⚠️ Challenges Faced During Extraction
