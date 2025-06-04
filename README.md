@@ -172,7 +172,7 @@ While building this scraper, I encountered several complex scenarios that made e
   - The video players and metadata are often rendered dynamically using JavaScript. This makes standard tools like `requests` or `BeautifulSoup` ineffective, since they can't execute JavaScript. Tools like `selenium-wire` were necessary to capture underlying network requests.
 
 - **🔄 JavaScript-Based Pagination**  
-  - Some websites used ASP.NET-style pagination (`__doPostBack(...)`), which triggers JavaScript-based POST requests instead of changing page URLs. Scraping these required simulating those POST actions manually.
+  - Some websites used ASP.NET-style pagination (`__doPostBack(...)`), which triggers JavaScript-based POST requests instead of changing page URLs. Scraping these required simulating those POST actions via selenium.
 
 - **🎥 HLS Streaming Instead of Direct `.mp4` Files**  
   - Many sites used HTTP Live Streaming (HLS), which splits videos into `.ts` segments served via `.m3u8` playlists. Extracting usable download links required identifying and interpreting those manifests.
