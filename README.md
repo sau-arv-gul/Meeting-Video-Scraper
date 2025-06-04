@@ -121,7 +121,6 @@ Perfect for debugging, experimenting, or scraping from specific platforms as nee
 To significantly boost download speed, I implemented **parallel video downloading** by integrating `yt-dlp` with the external downloader **aria2c**.
 Enhanced the download performance by leveraging `aria2c`'s multi-threaded capabilities via `yt-dlp`.
 
-### ⚙️ Configuration
 The following Python dictionary was used to configure `yt-dlp` with optimized `aria2c` settings:
 
 ```python
@@ -138,6 +137,25 @@ aria2c_opts = {
     'outtmpl': os.path.join(download_dir, '%(title)s.%(ext)s')  # Save in downloads/
 }
 ```
+
+### 📈 Benchmark: yt-dlp vs yt-dlp + aria2c
+
+To evaluate the performance gain using `aria2c`, I downloaded **4 meeting videos** using two methods:
+
+1. **Standard `yt-dlp`**
+2. **`yt-dlp` with `aria2c` as an external downloader**
+
+#### ⏱️ Time Taken
+
+| Method                  | Total Time (minutes) |
+|-------------------------|----------------------|
+| `yt-dlp` only           | 117.59               |
+| `yt-dlp` + `aria2c`     | **11.08**            |
+
+> 🚀 **Result:** With `aria2c`, downloads were over **10× faster**, reducing total time from nearly **2 hours** to just **11 minutes**.
+
+This improvement is especially impactful when scraping and downloading videos at scale across multiple public sources.
+
 
 
 
