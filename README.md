@@ -151,6 +151,8 @@ To evaluate the performance gain using `aria2c`, I downloaded **4 meeting videos
 | `yt-dlp` only           | 117.59               |
 | `yt-dlp` + `aria2c`     | **11.08**            |
 
+![image](https://github.com/user-attachments/assets/f3768249-4bc0-45fc-aedd-f6171c37de19)
+
  🚀 **Result:** With `aria2c`, downloads were over **10× faster**, reducing total time from nearly **2 hours** to just **11 minutes**.
 This performance improvement is highly beneficial when processing large volumes of videos from multiple public platforms, significantly reducing total execution time.
 
