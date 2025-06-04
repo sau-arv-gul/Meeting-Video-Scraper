@@ -118,8 +118,7 @@ Perfect for debugging, experimenting, or scraping from specific platforms as nee
 
 
 ## ⚡ Bonus: High-Speed Download with `yt-dlp` + `aria2c`
-To significantly boost download speed, I implemented **parallel video downloading** by integrating `yt-dlp` with the external downloader **aria2c**.
-Enhanced the download performance by leveraging `aria2c`'s multi-threaded capabilities via `yt-dlp`.
+To significantly boost download speed, I integrated `yt-dlp` with the external downloader **aria2c**, leveraging its multi-threaded capabilities for parallel downloading.
 
 The following Python dictionary was used to configure `yt-dlp` with optimized `aria2c` settings:
 
