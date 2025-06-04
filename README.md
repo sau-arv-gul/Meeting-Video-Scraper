@@ -118,7 +118,7 @@ Perfect for debugging, experimenting, or scraping from specific platforms as nee
    
 
 
-### ⚠️ Challenges Faced During Extraction
+## ⚠️ Challenges Faced During Extraction
 
 While building this scraper, I encountered several complex scenarios that made extraction non-trivial. Here are some key technical challenges:
 
