@@ -84,7 +84,7 @@ cd Meeting-Video-Scraper
 pip install -r requirements.txt
 ```
 3. **Run the Scraper**
-   to scrape you just need to run the Main.py
+   - to scrape you just need to run the Main.py
  ```bash
 python Main.py
 ```  
