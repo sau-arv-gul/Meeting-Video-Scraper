@@ -61,6 +61,7 @@ Video Scraper/
 ├── downloads/                       # Output video download directory
 │
 ├── BONUS.py                         # Bonus problem code (optional task)
+├── Benchmark.py                     # Download speed comparison
 ├── Input.json                       # input JSON for testing
 ├── Main.py                          # Main script to run metadata scraping
 ├── OUTPUT_1.json                    # Output of filtered metadata
