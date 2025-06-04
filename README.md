@@ -47,7 +47,7 @@ Each class contains the following methods:
 - `get_direct_url( )` : for each filtered urls, it extract its direct url and save into `OUTPUT_2.json`.
 
 
-## 📌 Project Structure
+## 🏛 Project Structure
 ```text
 Video Scraper/
 │
