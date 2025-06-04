@@ -87,9 +87,9 @@ pip install -r requirements.txt
    - You don’t need to manually run individual scraper classes. Just execute Main.py — it automatically:
        - Reads your input from Input.json
        - Scrapes and filters meeting video metadata by date
-       - Saves the results to OUTPUT_1.json
-       - Extracts direct video URLs (for downloading with tools like yt-dlp)
-       - save extracted direct link to OUTPUT_2.json
+       - Saves the filtered results to OUTPUT_1.json
+       - for each filtered data, it extracts direct video URLs (for downloading with tools like yt-dlp)
+       - saves extracted direct link to OUTPUT_2.json
  ```bash
 python Main.py
 ```  
