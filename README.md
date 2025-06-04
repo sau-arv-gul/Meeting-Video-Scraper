@@ -140,3 +140,13 @@ While building this scraper, I encountered several complex scenarios that made e
 ---
 
 These issues gave me deeper insights into how streaming platforms work under the hood — particularly regarding **referrer policies**, **authenticated sessions**, and **dynamic video delivery mechanisms**. Each challenge improved the robustness of the scraper and broadened my technical understanding.
+
+
+
+### 📚 Disclaimer
+This project is for **educational purposes only**.
+It demonstrates how public video links can be extracted using basic scraping techniques, while respecting site limits and structure.
+
+🔒 No login-restricted or private content was accessed.
+
+Please use responsibly and respect each website’s terms of service.
