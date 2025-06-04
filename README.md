@@ -1,4 +1,4 @@
-# 📽️ Meeting Video Scraper
+# 🎥 Meeting Video Scraper
 Meeting Video Scraper is a Python-based tool,  developed to scrape and download publicly available government meeting videos from various platforms such as CivicMedia, CivicClerk, YouTube and more.
 These videos cover sessions like City Council meetings, Finance Committees, Planning Commissions, Zoning Boards, and other civic organizations.
 
@@ -12,7 +12,7 @@ These videos cover sessions like City Council meetings, Finance Committees, Plan
 - **Proxy:** Uses IP rotation and delays between requests to avoid getting blocked.
 
 
-## 🛠️ Tech Stack
+## 📟 Tech Stack
 
 - **Requests:** 
   Sending lightweight HTTP requests.
