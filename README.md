@@ -99,6 +99,17 @@ python Main.py
 python BOUNUS.py
 ```
 
+
+## 🧪 Want to Run or Test Each Scraper Separately?
+
+If you want to run, inspect, or test each scraper class individually — no problem!  
+Check out this [Google Colab notebook](https://your-colab-link-here) where you can:
+
+- Run individual scraper classes
+- Apply custom date ranges
+- Explore filtered results in isolation
+
+Perfect for debugging, experimenting, or scraping from specific platforms as needed.
    
 
 
