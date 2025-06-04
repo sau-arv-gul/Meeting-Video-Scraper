@@ -1,6 +1,0 @@
-selenium
-selenium-wire
-requests
-BeautifulSoup
-scrapetube
-yt_dlp
