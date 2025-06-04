@@ -117,7 +117,8 @@ Perfect for debugging, experimenting, or scraping from specific platforms as nee
 - One of the bonus challenge URLs was also successfully resolved — see the final section of the notebook for details.
 
 
-## Bonus: Parallel download { yt_dl + aria2c } 
+## ⚡ Bonus: High-Speed Download with `yt-dlp` + `aria2c`
+ 
 
 
 ## ⚠️ Challenges Faced During Extraction
