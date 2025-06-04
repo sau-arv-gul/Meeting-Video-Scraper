@@ -20,7 +20,7 @@ These videos cover sessions like City Council meetings, Finance Committees, Plan
 - **Selenium:** Automating browser actions & handling dynamic websites.
 - **Selenium-Wire:** Extends Selenium to capture requests and responses.
 - **yt-dlp:** To download video from direct URL.
-- **aria2c** Multi-Threading for parallel downloading
+- **aria2c:** Multi-Threading for parallel downloading
 
 
 
