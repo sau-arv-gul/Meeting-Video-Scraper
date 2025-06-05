@@ -167,7 +167,7 @@ While building this scraper, I encountered several complex scenarios that made e
 - **🔐 Blocked Access to Direct Video Links**  
   - Some `.m3u8` HLS stream URLs returned **403 Forbidden** errors when accessed outside the site. These were often protected by referrer policies or temporary session tokens tied to an authenticated browser session.
 
-- **📦 Blob URLs Cannot Be Downloaded**  
+- **📦 Blob URLs**  
   - Platforms like IBM Cloud Video or Viebit use `blob:` URLs (e.g., `blob:https://...`) in their `<video>` tags. These URLs are temporary, in-memory browser references and do **not** point to actual downloadable video files like `.mp4` or `.m3u8`.
 
 - **⚙️ Dynamic JavaScript Rendering**  
