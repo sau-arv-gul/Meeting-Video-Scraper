@@ -181,7 +181,7 @@ While building this scraper, I encountered several complex scenarios that made e
 
 ---
 
-These issues gave me deeper insights into how streaming platforms work under the hood — particularly regarding **referrer policies**, **authenticated sessions**, and **dynamic video delivery mechanisms**. Each challenge improved the robustness of the scraper and broadened my technical understanding.
+These issues gave me deeper insights into how streaming platforms work under the hood — particularly regarding **referrer policies**, **authenticated sessions**, and **dynamic video delivery mechanisms**. Each challenge improved and broadened my technical understanding.
 
 
 
