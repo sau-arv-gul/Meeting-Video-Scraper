@@ -98,7 +98,7 @@ python Main.py
 
 4. **Download videos**
 ```bash
-python BOUNUS.py
+python BONUS.py
 ```
 
 
