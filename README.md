@@ -28,9 +28,7 @@ These videos cover sessions like City Council meetings, Finance Committees, Plan
 
 Since each website has a unique structure and layout, the scraper is built using dedicated Python classes, one for each base URL. This modular design makes it easy to maintain, debug, and extend.
 
-### 🔹 Scraper Classes
-
-Each base URL is handled by its own class:
+Custom Scraper Classes :
 
 - `CivicMediaScraper` : for Lansdale CivicMedia. [website link](https://www.lansdale.org/CivicMedia?CID=2024-Council-Meetings-26)
 - `CivicClerkScraper` : for Charleston CivicClerk. [website link](https://charlestonwv.portal.civicclerk.com/)
