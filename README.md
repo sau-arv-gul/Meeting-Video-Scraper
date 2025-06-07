@@ -36,10 +36,7 @@ Custom Scraper Classes :
 - `FredericksburgCityScraper` : for Fredericksburg RegionalWebTV. [website link](https://www.regionalwebtv.com/fredcc)
 - `WinchesterVirginiaScraper` : for Winchester CivicWeb. [website link](https://winchesterva.civicweb.net/portal/)
 
-### 🔧 Common Methods in Each Class
-
-Each class contains the following methods:
-
+ Common methods in each scraper class:
 - `get_all_url( )` : Extracts all video links from the base URL  
 - `get_filtered_url( )` : Filters and returns only the videos between the specified date range  
 - `save( )` : Saves the filtered results into `OUTPUT_1.json`  
